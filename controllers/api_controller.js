@@ -25,7 +25,8 @@ exports.character_pos_post = [
         }).exec();
         if(character.length > 0) {
             res.status(200).json({
-                character
+                character,
+                found:true
             })
         } else {
             res.status(200).json({
