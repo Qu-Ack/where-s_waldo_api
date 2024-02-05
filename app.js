@@ -23,4 +23,4 @@ app.use(express.urlencoded({extended:true}))
 app.use(cors());
 app.use('/', APIROUTER);
 
-app.listen(PORT, () => console.log("SERVER ON ..."))
+app.listen(PORT, '0.0.0.0',() => console.log("SERVER ON ..."))
